@@ -1,0 +1,75 @@
+html,body
+{
+    height: 100%;
+    margin: 0;
+}
+header
+{
+    background-color: green;
+    color: white;
+    font-size: x-large;
+    line-height: 50px;
+    text-align: center;
+}
+footer
+{
+    background-color: black;
+    color: white;
+    font-size: larger;
+    line-height: 25px;
+    text-align: center;
+}
+.wrapper
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container
+{
+    width: 50%;
+    min-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex: 1 1 auto;
+}
+.container div
+{
+    box-sizing: border-box;
+}
+.menu
+{
+    background-color: red;
+    color: white;
+    text-decoration: underline;
+    width: 200px;
+    flex-shrink: 0;
+    padding-top: 30px;
+    padding: 35px;
+}
+.menu p:hover
+{
+    background-color: green;
+}
+p:first-child
+{
+    margin: 0;
+}
+
+.content
+{
+    background-color: white;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.content::first-letter
+{
+    color: red;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+.content::selection
+{
+    background-color: green;
+    color: white;
+}
